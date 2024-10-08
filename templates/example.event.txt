@@ -1,0 +1,5 @@
+module.exports = {
+    name: '',
+    run: async (message, client) => {
+    },
+};

@@ -1,0 +1,52 @@
+const { SlashCommandBuilder } = require('discord.js');
+
+module.exports.conf = {
+    Prefix: {
+        enabled: false,
+        userPermissions: [],
+        botPerms: [''], 
+        cooldown: 0,
+        globalCooldown: false,
+        ownerOnly: false,
+        guildOnly: false,
+        maintenance: false,
+    },
+    Slash: {
+        enabled: true,
+        userPermissions: [''], 
+        botPerms: [''], 
+        cooldown: 0,
+        globalCooldown: false,
+        ownerOnly: false,
+        maintenance: false,
+    },
+    ContextMenu: {
+        enabled: false,
+    },
+};
+
+module.exports.help = {
+    Prefix: {
+        name: "",
+        description: "",
+    },
+    Slash: {
+        data: new SlashCommandBuilder()
+            .setName("")
+            .setDescription(""),
+    },
+    ContextMenu: {
+        data: new ContextMenuCommandBuilder()
+            .setName('')
+            .setType(ApplicationCommandType.User),
+    },
+};
+
+module.exports.prefixRun = async (client, message, args) => {
+};
+
+module.exports.slashRun = async (interaction, client) => {
+};
+
+module.exports.contextMenuRun = async (interaction, client) => {
+};

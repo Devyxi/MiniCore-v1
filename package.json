@@ -1,0 +1,33 @@
+{
+  "name": "djs-v14-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Devyxi",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.6.0",
+    "mysql2": "^3.11.3",
+    "pg": "^8.13.0",
+    "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://yourprojecthomepage.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repo-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/repo-name/issues"
+  }
+}
