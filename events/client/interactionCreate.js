@@ -5,7 +5,7 @@ const cooldowns = new Map();
 module.exports = {
     name: 'interactionCreate',
     run: async (interaction, client) => {
-        if (!interaction.isCommand() && !interaction.isContextMenu() && !interaction.isButton() && !interaction.isSelectMenu() && !interaction.isModalSubmit()) {
+        if (!interaction.isCommand() && !interaction.isUserContextMenuCommand() && !interaction.isButton() && !interaction.isSelectMenu() && !interaction.isModalSubmit()) {
             return; 
         }
 
